@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Формирование "Рабочей программы"</title>
 </head>
+
 <body>
-	
+	<header class="header">
+		<a class="logo" href="https://vkipo.ru/">
+			<img src="images/logo.png" alt="Логотип 'КИПО'" width="200">
+		</a>
+		<a class="section-name" href="https://rasp.vkipo.ru/login/index.php">
+			<h1>Учебно-методический портал</h1>
+		</a>
+		<a class="header-fio" href="https://rasp.vkipo.ru/login/index.php">
+			<b>Лотовский Даниил Евгеньевич</b>
+		</a>
+	</header>
+	<main>
+		<h2>Формирование "Рабочей программы"</h2>
+		<form action="" method="post">
+			<p>
+				<label for="speciality">Специальность</label>
+				<select name="stud-speciality" id="speciality" autofocus>
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value=">Программирование в компьютерных системах">Программирование в компьютерных системах</option>
+					<option value="Бухгалтерское дело">Бухгалтерское дело</option>
+					<option value="Гостинечное дело">Гостинечное дело</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="group">Группа</label>
+				<select name="stud-group" id="group">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value=">Программирование в компьютерных системах">18-ПКС2-9</option>
+					<option value="Бухгалтерское дело">19-БД1-1</option>
+					<option value="Гостинечное дело">19-ГД-2</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="discipline">Дисциплина</label>
+				<select name="stud-discipline" id="discipline">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="WEB-разработка">WEB-разработка</option>
+					<option value="Основы программирования">Основы программирования</option>
+					<option value="База данных">База данных</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="year-doc">Выберите год документа</label>
+				<select name="stud-year-doc" id="year-doc">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="fio-teacher">ФИО преподавателя</label>
+				<select name="fio-teacher" id="fio-teacher">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="Шляпин Алексей Михайлович">Шляпин Алексей Михайлович</option>
+					<option value="Шляпин Николай Михайлович">Шляпин Николай Михайлович</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="fio-teacher-kipo">ФИО рецензента (КИПО)</label>
+				<select name="fio-teacher-kipo" id="fio-teacher-kipo">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="Шляпин Алексей Михайлович">Шляпин Алексей Михайлович</option>
+					<option value="Шляпин Николай Михайлович">Шляпин Николай Михайлович</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="ymo">УМО</label>
+				<select name="ymo" id="ymo">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="Что такое 'УМО'?">Что такое 'УМО'?</option>
+					<option value="Что такое 'УМО'?">Что такое 'УМО'?</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="fio-teacher-rab">ФИО рецензента (Работодатель)</label>
+				<select name="fio-teacher-rab" id="fio-teacher-rab">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="Шляпин Алексей Михайлович">Шляпин Алексей Михайлович</option>
+					<option value="Шляпин Николай Михайлович">Шляпин Николай Михайлович</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="address">Место прохождения практики</label>
+				<select name="address" id="address">
+					<option value="Выберите" selected disabled>Выберите</option>
+					<option value="Садовая, 218">Садовая, 218</option>
+					<option value="Красноармейская, 170">Красноармейская, 170</option>
+				</select>
+				<input type="text" id="address" name="address" placeholder="Введите новый адрес">
+			</p>
+		</form>
+	</main>
+
+	<footer class="footer">
+		<a href="https://vkipo.ru/">Кубанский институт профессионального образования</a>
+		<a href="https://vkipo.ru/">На главную</a>
+		<a href="https://rasp.vkipo.ru/login/index.php">Расписание</a>
+	</footer>
 </body>
+
 </html>
