@@ -57,7 +57,7 @@ main {
 	/* grid-template-rows: auto; */
 }
 
-.buttom {
+.button {
 	margin: auto;
 	margin-top: 10px;
 	padding: 15px;
@@ -86,4 +86,25 @@ main {
 
 .footer a:hover {
 	text-decoration: underline;
+}
+
+/* RP Document */
+.forma-rp-doc {
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	grid-gap: 30px;
+	margin-left: 25%;
+}
+
+.forma-rp-doc button {
+	margin: 0px 0px 20px -150px;
+}
+
+.dow-button{
+	border-style: none;
+}
+
+.select {
+	width: 300px;
+	height: 30px;
 }
