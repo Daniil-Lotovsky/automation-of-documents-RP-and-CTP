@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Формирование документа "Рабочая программа"</title>
+	<title>Формирование документа "Календарно-тематическое планирование"</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
 	</header>
 
 	<main>
-		<h2>Формирование документа "Рабочей программы"</h2>
-		<section class="forma-rp-doc">
+		<h2>Формирование документа "Календарно-тематическое планирование"</h2>
+		<section class="forma-ktp-doc">
 			<div>
 				<form action="Word.php" method="post" enctype="multipart/form-data">
 
@@ -35,7 +35,8 @@
 							<option value="Выберите" selected disabled>Выберите</option>
 							<option value=">Программирование в компьютерных системах">Программирование в компьютерных системах
 							</option>
-							<option value="Информационные системы">Информационные системы</option>
+							<option value="Бухгалтерское дело">Бухгалтерское дело</option>
+							<option value="Гостинечное дело">Гостинечное дело</option>
 						</select>
 					</p>
 
@@ -43,9 +44,9 @@
 						<label for="group">Группа</label><br>
 						<select class="select" name="group" id="group">
 							<option value="Выберите" selected disabled>Выберите</option>
-							<option value="18-ПКС1-9">18-ПКС1-9</option>
 							<option value="18-ПКС2-9">18-ПКС2-9</option>
-							<option value="19-ПКС-11">19-ПКС-11</option>
+							<option value="19-БД1-1">19-БД1-1</option>
+							<option value="19-ГД-2">19-ГД-2</option>
 						</select>
 					</p>
 
@@ -55,7 +56,7 @@
 							<option value="Выберите" selected disabled>Выберите</option>
 							<option value="WEB-разработка">WEB-разработка</option>
 							<option value="Основы программирования">Основы программирования</option>
-							<option value="База данных">Разработка базы данных</option>
+							<option value="База данных">База данных</option>
 						</select>
 					</p>
 
@@ -70,22 +71,20 @@
 			</div>
 			<div>
 				<p>
-					<label for="fio-teacher">ФИО преподавателя</label><br>
+					<label for="fio-teacher">ФИО председателя</label><br>
 					<select class="select" name="fio-teacher" id="fio-teacher">
 						<option value="Выберите" selected disabled>Выберите</option>
-						<option value="Пясецкий Сергей Александрович">Пясецкий Сергей Александрович</option>
-						<option value="Варкентин Владимир Францевич">Варкентин Владимир Францевич</option>
-						<option value="Белошапка Антон Валерьевич">Белошапка Антон Валерьевич</option>
+						<option value="Шляпин Алексей Михайлович">Шляпин Алексей Михайлович</option>
+						<option value="Шляпин Николай Михайлович">Шляпин Николай Михайлович</option>
 					</select>
 				</p>
 
 				<p>
-					<label for="fio-teacher-kipo">ФИО рецензента (КИПО)</label><br>
+					<label for="fio-teacher-kipo">ФИО преподавателя дисциплины</label><br>
 					<select class="select" name="fio-teacher-kipo" id="fio-teacher-kipo">
 						<option value="Выберите" selected disabled>Выберите</option>
-						<option value="Пясецкий Сергей Александрович">Пясецкий Сергей Александрович</option>
-						<option value="Варкентин Владимир Францевич">Варкентин Владимир Францевич</option>
-						<option value="Белошапка Антон Валерьевич">Белошапка Антон Валерьевич</option>
+						<option value="Шляпин Алексей Михайлович">Шляпин Алексей Михайлович</option>
+						<option value="Шляпин Николай Михайлович">Шляпин Николай Михайлович</option>
 					</select>
 				</p>
 
@@ -98,23 +97,7 @@
 					</select>
 				</p>
 
-				<p>
-					<label for="fio-teacher-rab">ФИО рецензента (Работодатель)</label><br>
-					<input class="select" type="text" id="fio-teacher-rab" name="fio-teacher-rab"
-						placeholder="Например: Иванов Иван Иванович">
-				</p>
-
-				<!-- <p>
-					<label for="address">Место прохождения практики</label><br>
-					<select class="select" name="address" id="address">
-						<option value="Выберите" selected disabled>Выберите</option>
-						<option value="Садовая, 218">Садовая, 218</option>
-						<option value="Красноармейская, 170">Красноармейская, 170</option>
-					</select>
-					<input class="select" type="text" id="address" name="address" placeholder="Введите новый адрес">
-				</p> -->
-
-				<button class="button dow-button" type="submit">Скачать документ</button>
+					<button class="button dow-button" type="submit">Скачать документ</button>
 				</form>
 			</div>
 		</section>

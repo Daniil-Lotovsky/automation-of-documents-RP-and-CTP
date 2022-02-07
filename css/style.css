@@ -10,7 +10,6 @@ body {
 	background-color: #cecece;
 	display: flex;
 	justify-content: space-evenly;
-	/* grid-template-columns: repeat(3, 1fr); */
 }
 
 .header a {
@@ -18,8 +17,9 @@ body {
 	color: #000000;
 }
 
-.header a:hover {
-	text-decoration: underline;
+.header a:hover,
+.footer a:hover {
+	color: #707070;
 }
 
 .logo {
@@ -31,12 +31,11 @@ body {
 }
 
 .header-fio {
-	/* margin-top: 1.5%; */
 	margin: auto;
 }
 
 main {
-	margin-left: 100px; 
+	margin-left: 100px;
 }
 
 .new-document-rp-ktp {
@@ -54,7 +53,6 @@ main {
 
 .new-document {
 	display: grid;
-	/* grid-template-rows: auto; */
 }
 
 .button {
@@ -67,6 +65,15 @@ main {
 	text-decoration: none;
 	color: #ffffff;
 	width: 220px;
+}
+
+.dow-button{
+	border-style: none;
+}
+
+.select {
+	width: 300px;
+	height: 30px;
 }
 
 .new-document p {
@@ -84,10 +91,6 @@ main {
 	margin: 40px 15px;
 }
 
-.footer a:hover {
-	text-decoration: underline;
-}
-
 /* RP Document */
 .forma-rp-doc {
 	display: grid;
@@ -97,14 +100,17 @@ main {
 }
 
 .forma-rp-doc button {
-	margin: 0px 0px 20px -150px;
+	margin: 0px 0px 66px -150px;
 }
 
-.dow-button{
-	border-style: none;
+/* KTP Document */
+.forma-ktp-doc {
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	grid-gap: 30px;
+	margin-left: 25%;
 }
 
-.select {
-	width: 300px;
-	height: 30px;
+.forma-ktp-doc button {
+	margin: 70px 0px 73px -150px;
 }
