@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Панель-администратора</title>
+</head>
+
+<body>
+	<header class="header">
+		<a class="logo" href="https://vkipo.ru/">
+			<img src="images/logo.png" alt="Логотип 'КИПО'" width="200">
+		</a>
+		<a class="section-name" href="index.html">
+			<h1>Учебно-методический портал</h1>
+		</a>
+		<a class="header-fio" href="https://rasp.vkipo.ru/login/index.php">
+			<b>Фамилия Имя Отчество</b>
+		</a>
+	</header>
+
+	<main>
+		<h2>Панель-администратора</h2>
+		<div class="admin-menu">
+			<button class="button" onclick="speciality()">Специальности</button>
+			<button class="button" onclick="group()">Группы</button>
+			<button class="button" onclick="discipline()">Дисциплины</button>
+			<button class="button" onclick="teachers()">Преподаватели</button>
+		</div>
+
+		<div class="admin-speciality">
+			<table class="admin-table">
+				<tr>
+					<td>Программирование в компьютерных системах</td>
+					<td>
+						<button class="admin-button okey" onclick="okey_speciality()">Готово</button>
+						<button class="admin-button edit" onclick="table_speciality()">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Фармация</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Туризм</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Программирование в компьютерных системах</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Фармация</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Туризм</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<form action="test.php" method="post">
+				<label for="new_speciality">Добавить новую специальность</label><br>
+				<input class="select" type="text" id="new_speciality" name="new_speciality">
+				<button class="admin-button okey" onclick="">Добавить</button>
+			</form>
+
+		</div>
+
+		</div>
+
+		<div class="admin-group">
+			<table class="admin-table">
+				<tr>
+					<td>18-ПКС1-9</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>18-ПКС2-2</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>19-ПКС-11</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<form action="test.php" method="post">
+				<label for="new_group">Добавить новую группу</label><br>
+				<input class="select" type="text" id="new_group" name="new_group">
+				<button class="admin-button okey" onclick="">Добавить</button>
+			</form>
+		</div>
+
+		<div class="admin-discipline">
+			<table class="admin-table">
+				<tr>
+					<td>Web-разрабокта</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Мобильная разработка</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Технологии разработки программного обеспечения</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<form action="test.php" method="post">
+				<label for="new_discipline">Добавить новую дисциплину</label><br>
+				<input class="select" type="text" id="new_discipline" name="new_discipline">
+				<button class="admin-button okey" onclick="">Добавить</button>
+			</form>
+		</div>
+
+		<div class="admin-teacher">
+			<table class="admin-table">
+				<tr>
+					<td>Пясецкий Сергей Александрович</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Варкентин Владимир Францевич</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Белошапка Антон Валерьевич</td>
+					<td>
+						<button class="admin-button">Редактировать</button>
+						<button class="admin-button">Удалить</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<form action="test.php" method="post">
+				<label for="new_teacher">Добавить нового преподавателя</label><br>
+				<input class="select" type="text" id="new_teacher" name="new_teacher">
+				<button class="admin-button okey" onclick="">Добавить</button>
+			</form>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<a href="https://vkipo.ru/">Кубанский институт профессионального образования</a>
+		<a href="https://rasp.vkipo.ru/login/index.php">Расписание</a>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
