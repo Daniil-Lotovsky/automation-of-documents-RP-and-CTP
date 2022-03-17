@@ -31,7 +31,7 @@
 
 					<p>
 						<label for="speciality">Специальность</label><br>
-						<select class="select" name="speciality" id="speciality" autofocus>
+						<select class="select option" name="speciality" id="speciality" autofocus>
 							<option value="Выберите" selected disabled>Выберите</option>
 							<option value=">Программирование в компьютерных системах">Программирование в компьютерных системах
 							</option>
@@ -39,19 +39,14 @@
 						</select>
 					</p>
 
-					<p>
+					<p class="option">
 						<label for="group">Группа</label><br>
-						<select class="select" name="group" id="group">
-							<option value="Выберите" selected disabled>Выберите</option>
-							<option value="18-ПКС1-9">18-ПКС1-9</option>
-							<option value="18-ПКС2-9">18-ПКС2-9</option>
-							<option value="19-ПКС-11">19-ПКС-11</option>
-						</select>
+						<input class="select" type="text" name="group" id="group" placeholder="Группа">
 					</p>
 
 					<p>
 						<label for="discipline">Дисциплина</label><br>
-						<select class="select" name="discipline" id="discipline">
+						<select class="select option" name="discipline" id="discipline">
 							<option value="Выберите" selected disabled>Выберите</option>
 							<option value="WEB-разработка">WEB-разработка</option>
 							<option value="Основы программирования">Основы программирования</option>
@@ -61,7 +56,7 @@
 
 					<p>
 						<label for="year-doc">Выберите год документа</label><br>
-						<select class="select" name="year-doc" id="year-doc">
+						<select class="select option" name="year-doc" id="year-doc">
 							<option value="2020">2020</option>
 							<option value="2021">2021</option>
 							<option value="2022" selected>2022</option>
@@ -71,27 +66,19 @@
 			<div>
 				<p>
 					<label for="fio-teacher">ФИО преподавателя</label><br>
-					<select class="select" name="fio-teacher" id="fio-teacher">
-						<option value="Выберите" selected disabled>Выберите</option>
-						<option value="Пясецкий Сергей Александрович">Пясецкий Сергей Александрович</option>
-						<option value="Варкентин Владимир Францевич">Варкентин Владимир Францевич</option>
-						<option value="Белошапка Антон Валерьевич">Белошапка Антон Валерьевич</option>
-					</select>
+					<input class="select" type="text" name="fio-teacher" id="fio-teacher"
+						placeholder="Например: Иванов Иван Иванович">
 				</p>
 
 				<p>
 					<label for="fio-teacher-kipo">ФИО рецензента (КИПО)</label><br>
-					<select class="select" name="fio-teacher-kipo" id="fio-teacher-kipo">
-						<option value="Выберите" selected disabled>Выберите</option>
-						<option value="Пясецкий Сергей Александрович">Пясецкий Сергей Александрович</option>
-						<option value="Варкентин Владимир Францевич">Варкентин Владимир Францевич</option>
-						<option value="Белошапка Антон Валерьевич">Белошапка Антон Валерьевич</option>
-					</select>
+					<input class="select" type="text" name="fio-teacher-kipo" id="fio-teacher-kipo"
+						placeholder="Например: Иванов Иван Иванович">
 				</p>
 
 				<p>
 					<label for="ymo">УМО</label><br>
-					<select class="select" name="ymo" id="ymo">
+					<select class="select option" name="ymo" id="ymo">
 						<option value="Выберите" selected disabled>Выберите</option>
 						<option value="Что такое 'УМО'?">Что такое 'УМО'?</option>
 						<option value="Что такое 'УМО'?">Что такое 'УМО'?</option>
@@ -100,7 +87,7 @@
 
 				<p>
 					<label for="fio-teacher-rab">ФИО рецензента (Работодатель)</label><br>
-					<input class="select" type="text" id="fio-teacher-rab" name="fio-teacher-rab"
+					<input class="select option" type="text" id="fio-teacher-rab" name="fio-teacher-rab"
 						placeholder="Например: Иванов Иван Иванович">
 				</p>
 
